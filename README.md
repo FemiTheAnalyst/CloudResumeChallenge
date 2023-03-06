@@ -1,5 +1,4 @@
-# CloudResumeChallenge
-Repo for the Cloud Resume Challenge.
+
 # cloud-resume-challenge
 This project is my online resume, a static web page, serving simple html & css I wrote from scratch to keep it clean.
 Using "aws-vault", which helps me manage AWS profiles and store credentials securely, and GitHub actions is using secrets for this during CI/CD.
@@ -7,8 +6,8 @@ Please see my [Dev.to blog post](https://dev.to/marcbacchi/cloud-resume-built-fo
 You can visit [my domain here](https://www.marcbacchi.dev) which is the result of this project.
 #### How this project works at the moment:
 Any push to Main branch will trigger the GitHub actions I created which will:
-* terraform init
-* terraform apply (auto approve)
+* sam init
+* sam deploy (auto approve)
 * S3 sync my website files (html & css)
 * trigger Cypress tests which hit the API endpoint and validate the response (heartbeat check)
 #### high level description of functionality
@@ -24,4 +23,4 @@ All services were configured and provisioned by Terraform IaC code, from the beg
 
 Plenty of changes can be made, I will be adding GitHub Issues to the repo for the items I plan on refactoring.
 
-* test txt here *
+

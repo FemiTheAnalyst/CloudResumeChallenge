@@ -3,7 +3,7 @@
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("AWS_API", {
+    fetch("YOUR_AWS_API_ENDPOINT_HERE", {
     method: "POST"
     })
     .then(response => response.text())
